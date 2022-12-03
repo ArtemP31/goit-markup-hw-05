@@ -123,6 +123,7 @@ body{
 .list-phone:hover,
 .list-phone:focus{
     color:var(--color-light-blue);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current{
@@ -131,10 +132,8 @@ body{
 
 .current::after{
     content: '';
-    width: 100%;
     height: 4px;
     background-color: var(--color-light-blue);
-    
     display: flex;
     border-radius: 2px;
     position: relative;
@@ -225,6 +224,7 @@ body{
 .sec-button:hover,
 .sec-button:focus{
     background-color: var(--color-btn);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-list-main{
@@ -328,11 +328,11 @@ body{
     text-transform: uppercase;
     color: var(--color-white);
     background: rgba(47, 48, 58, 0.8);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    
     position: absolute;
     width: 100%;
     bottom: 0;
+    left: 0;
     padding-top: 27px;
     padding-bottom: 27px;
 }
@@ -409,6 +409,7 @@ body{
 .person-soc-link:focus{
     background-color: var(--color-light-blue);
     color: var(--color-white);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list{
@@ -443,6 +444,7 @@ body{
 .clients-adres:focus{
     border-color: var(--color-light-blue);
     color: var(--color-light-blue);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot{
@@ -456,6 +458,7 @@ body{
 .foot-info:hover,
 .foot-info:focus{
     color:var(--color-light-blue);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -550,6 +553,7 @@ body{
 .foot-soc-link:focus{
     background-color: var(--color-light-blue);
     color: var(--color-white);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sec-btn{
@@ -565,7 +569,6 @@ body{
     display: flex;
     align-items: center;
     border: none;
-    cursor: pointer;
     padding: 6px 22px;
 }
 
@@ -575,6 +578,10 @@ body{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: var(--color-white);
+    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-done{
@@ -618,6 +625,7 @@ body{
 
 .filter-border:hover .portfolio-top-text{
     transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .portfolio-item-link{
@@ -628,6 +636,7 @@ body{
 .portfolio-item-link:hover,
 .portfolio-item-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .portfolio-top-wrap{
