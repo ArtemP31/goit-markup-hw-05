@@ -629,10 +629,11 @@ body{
     background: var(--color-white);
 }
 
-.filter-border:hover .portfolio-top-text{
+
+.portfolio-item-link:hover .portfolio-top-text , 
+.portfolio-item-link:focus .portfolio-top-text { 
     transform: translateY(0);
 }
-
 .portfolio-item-link{
     display: block;
     text-decoration: none;
